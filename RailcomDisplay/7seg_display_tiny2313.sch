@@ -1,0 +1,457 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny2313-20PU U11
+U 1 1 600174B7
+P 3500 3100
+F 0 "U11" H 3050 4200 50  0000 C CNN
+F 1 "ATtiny2313-20PU" H 4000 4200 50  0000 C CNN
+F 2 "footprint:PDIP20" H 3500 3100 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 3500 3100 50  0001 C CNN
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 6001835F
+P 3500 1600
+F 0 "#PWR0116" H 3500 1450 50  0001 C CNN
+F 1 "+5V" H 3515 1773 50  0000 C CNN
+F 2 "" H 3500 1600 50  0001 C CNN
+F 3 "" H 3500 1600 50  0001 C CNN
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 600186C2
+P 3500 4600
+F 0 "#PWR0117" H 3500 4350 50  0001 C CNN
+F 1 "GND" H 3505 4427 50  0000 C CNN
+F 2 "" H 3500 4600 50  0001 C CNN
+F 3 "" H 3500 4600 50  0001 C CNN
+	1    3500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J11
+U 1 1 60018D9B
+P 3600 6300
+F 0 "J11" H 3271 6396 50  0000 R CNN
+F 1 "AVR-ISP-6" H 3271 6305 50  0000 R CNN
+F 2 "footprint:pin_array_3x2_Block" V 3350 6350 50  0001 C CNN
+F 3 " ~" H 2325 5750 50  0001 C CNN
+	1    3600 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 600196EC
+P 3500 6900
+F 0 "#PWR0118" H 3500 6650 50  0001 C CNN
+F 1 "GND" H 3505 6727 50  0000 C CNN
+F 2 "" H 3500 6900 50  0001 C CNN
+F 3 "" H 3500 6900 50  0001 C CNN
+	1    3500 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6900 3500 6700
+Wire Wire Line
+	3500 5800 3500 5600
+$Comp
+L power:+5V #PWR0119
+U 1 1 60019D57
+P 3500 5600
+F 0 "#PWR0119" H 3500 5450 50  0001 C CNN
+F 1 "+5V" H 3515 5773 50  0000 C CNN
+F 2 "" H 3500 5600 50  0001 C CNN
+F 3 "" H 3500 5600 50  0001 C CNN
+	1    3500 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3600 4700 3600
+Wire Wire Line
+	4100 3700 4550 3700
+Wire Wire Line
+	4100 3500 4400 3500
+Wire Wire Line
+	4400 3500 4400 4400
+Wire Wire Line
+	4550 3700 4550 4250
+Wire Wire Line
+	4700 3600 4700 4100
+Wire Wire Line
+	4100 3400 4850 3400
+Wire Wire Line
+	4850 3400 4850 3950
+Text GLabel 4400 3150 2    50   Input ~ 0
+RXD
+Wire Wire Line
+	4100 3000 5150 3000
+Wire Wire Line
+	5150 3000 5150 4650
+Text GLabel 5150 4650 3    50   BiDi ~ 0
+SCK
+Text GLabel 5350 4650 3    50   BiDi ~ 0
+MISO
+$Comp
+L Display_Character:CA56-12CGKWA D11
+U 1 1 6001F5FC
+P 8450 3000
+F 0 "D11" H 8450 3667 50  0000 C CNN
+F 1 "OSL40652" H 8450 3576 50  0000 C CNN
+F 2 "footprint:OSL40562" H 8450 2400 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/CA56-12CGKWA(Ver.9A).pdf" H 8020 3030 50  0001 C CNN
+	1    8450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 600241DE
+P 6600 2250
+F 0 "R21" V 6500 2250 50  0000 C CNN
+F 1 "102" V 6600 2250 50  0000 C CNN
+F 2 "footprint:R_1608" V 6530 2250 50  0001 C CNN
+F 3 "~" H 6600 2250 50  0001 C CNN
+	1    6600 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 600251BA
+P 6600 2500
+F 0 "R22" V 6500 2500 50  0000 C CNN
+F 1 "102" V 6600 2500 50  0000 C CNN
+F 2 "footprint:R_1608" V 6530 2500 50  0001 C CNN
+F 3 "~" H 6600 2500 50  0001 C CNN
+	1    6600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 600254CC
+P 6600 2750
+F 0 "R23" V 6500 2750 50  0000 C CNN
+F 1 "102" V 6600 2750 50  0000 C CNN
+F 2 "footprint:R_1608" V 6530 2750 50  0001 C CNN
+F 3 "~" H 6600 2750 50  0001 C CNN
+	1    6600 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 600258EF
+P 6600 3000
+F 0 "R24" V 6500 3000 50  0000 C CNN
+F 1 "102" V 6600 3000 50  0000 C CNN
+F 2 "footprint:R_1608" V 6530 3000 50  0001 C CNN
+F 3 "~" H 6600 3000 50  0001 C CNN
+	1    6600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 60025D3B
+P 6600 3250
+F 0 "R25" V 6500 3250 50  0000 C CNN
+F 1 "102" V 6600 3250 50  0000 C CNN
+F 2 "footprint:R_1608" V 6530 3250 50  0001 C CNN
+F 3 "~" H 6600 3250 50  0001 C CNN
+	1    6600 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 6002601D
+P 6600 3500
+F 0 "R26" V 6500 3500 50  0000 C CNN
+F 1 "102" V 6600 3500 50  0000 C CNN
+F 2 "footprint:R_1608" V 6530 3500 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 600262DB
+P 6600 3750
+F 0 "R27" V 6500 3750 50  0000 C CNN
+F 1 "102" V 6600 3750 50  0000 C CNN
+F 2 "footprint:R_1608" V 6530 3750 50  0001 C CNN
+F 3 "~" H 6600 3750 50  0001 C CNN
+	1    6600 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 3000 6750 3000
+Wire Wire Line
+	6750 2750 6900 2750
+Wire Wire Line
+	6900 2750 6900 2900
+Wire Wire Line
+	6900 2900 7350 2900
+Wire Wire Line
+	7350 2800 7050 2800
+Wire Wire Line
+	7050 2800 7050 2500
+Wire Wire Line
+	7050 2500 6750 2500
+Wire Wire Line
+	6750 2250 7200 2250
+Wire Wire Line
+	7200 2250 7200 2700
+Wire Wire Line
+	7200 2700 7350 2700
+Wire Wire Line
+	7350 3100 6900 3100
+Wire Wire Line
+	6900 3100 6900 3250
+Wire Wire Line
+	6900 3250 6750 3250
+Wire Wire Line
+	7350 3200 7050 3200
+Wire Wire Line
+	7050 3200 7050 3500
+Wire Wire Line
+	7050 3500 6750 3500
+Wire Wire Line
+	7350 3300 7200 3300
+Wire Wire Line
+	7200 3300 7200 3750
+Wire Wire Line
+	7200 3750 6750 3750
+NoConn ~ 7350 3400
+Wire Wire Line
+	6450 2750 6350 2750
+Wire Wire Line
+	6150 2600 6150 3000
+Wire Wire Line
+	6150 3000 6450 3000
+Wire Wire Line
+	6450 3250 5950 3250
+Wire Wire Line
+	6350 2750 6350 2900
+Wire Wire Line
+	5950 2700 5950 3250
+Wire Wire Line
+	6150 2500 6150 2300
+Wire Wire Line
+	6150 2500 6450 2500
+Wire Wire Line
+	6350 2150 6350 2250
+Wire Wire Line
+	6350 2250 6450 2250
+Wire Wire Line
+	5750 2400 5750 3500
+Wire Wire Line
+	5750 3500 6450 3500
+Wire Wire Line
+	5550 2800 5550 3750
+Wire Wire Line
+	5550 3750 6450 3750
+Wire Wire Line
+	9900 3300 9900 4100
+Wire Wire Line
+	9550 3300 9900 3300
+Wire Wire Line
+	10050 3200 10050 4250
+Wire Wire Line
+	9550 3200 10050 3200
+Wire Wire Line
+	10200 3100 10200 4400
+Wire Wire Line
+	9550 3100 10200 3100
+Wire Wire Line
+	9550 3400 9750 3400
+Wire Wire Line
+	9750 3400 9750 3950
+Wire Wire Line
+	4100 2900 5350 2900
+Wire Wire Line
+	5350 2900 5350 4650
+Connection ~ 5350 2900
+Wire Wire Line
+	5350 2900 6350 2900
+Wire Wire Line
+	5550 3750 5550 4650
+Connection ~ 5550 3750
+Text GLabel 5550 4650 3    50   BiDi ~ 0
+MOSI
+Wire Wire Line
+	4100 2800 5550 2800
+Wire Wire Line
+	4100 2700 5950 2700
+Wire Wire Line
+	4100 2600 6150 2600
+Wire Wire Line
+	4100 2400 5750 2400
+Wire Wire Line
+	4100 2300 6150 2300
+Wire Wire Line
+	5350 2500 5350 2150
+Wire Wire Line
+	5350 2150 6350 2150
+Wire Wire Line
+	4100 2500 5350 2500
+Wire Wire Line
+	4850 3950 9750 3950
+Wire Wire Line
+	4700 4100 9900 4100
+Wire Wire Line
+	4550 4250 10050 4250
+Wire Wire Line
+	4400 4400 10200 4400
+NoConn ~ 2900 2500
+NoConn ~ 2900 2700
+Wire Wire Line
+	2900 2300 2700 2300
+Text GLabel 2700 2300 0    50   Input ~ 0
+RESET
+Text GLabel 4300 6450 2    50   Output ~ 0
+RESET
+Text GLabel 4300 6300 2    50   Output ~ 0
+SCK
+Text GLabel 4300 6150 2    50   Output ~ 0
+MOSI
+Text GLabel 4300 6000 2    50   Output ~ 0
+MISO
+Wire Wire Line
+	4000 6400 4150 6400
+Wire Wire Line
+	4150 6400 4150 6450
+Wire Wire Line
+	4150 6450 4300 6450
+Wire Wire Line
+	4000 6300 4300 6300
+Wire Wire Line
+	4000 6200 4200 6200
+Wire Wire Line
+	4200 6200 4200 6150
+Wire Wire Line
+	4200 6150 4300 6150
+Wire Wire Line
+	4000 6100 4100 6100
+Wire Wire Line
+	4100 6100 4100 6000
+Wire Wire Line
+	4100 6000 4300 6000
+Wire Wire Line
+	3500 4200 3500 4400
+Wire Wire Line
+	3500 4400 2100 4400
+Wire Wire Line
+	2100 4400 2100 3250
+Connection ~ 3500 4400
+Wire Wire Line
+	3500 4400 3500 4600
+Wire Wire Line
+	3500 1600 3500 1800
+Wire Wire Line
+	3500 1800 2100 1800
+Connection ~ 3500 1800
+Wire Wire Line
+	3500 1800 3500 2000
+$Comp
+L Device:C C11
+U 1 1 600B940F
+P 2100 3100
+F 0 "C11" H 2215 3146 50  0000 L CNN
+F 1 "104" H 2215 3055 50  0000 L CNN
+F 2 "footprint:C_1005" H 2138 2950 50  0001 C CNN
+F 3 "~" H 2100 3100 50  0001 C CNN
+	1    2100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1800 2100 2950
+Text GLabel 4400 3300 2    50   Output ~ 0
+TXD
+Wire Wire Line
+	4100 3300 4400 3300
+Wire Wire Line
+	4100 3200 4250 3200
+Wire Wire Line
+	4250 3200 4250 3150
+Wire Wire Line
+	4250 3150 4400 3150
+Wire Wire Line
+	4100 3800 4250 3800
+Wire Wire Line
+	4250 3800 4250 4550
+Wire Wire Line
+	4250 4550 4400 4550
+Text GLabel 4400 4550 2    50   Input ~ 0
+EN
+$Comp
+L Connector_Generic:Conn_01x04 J12
+U 1 1 6017FB42
+P 5300 6200
+F 0 "J12" H 5218 6517 50  0000 C CNN
+F 1 "Debug" H 5218 6426 50  0000 C CNN
+F 2 "footprint:pin_array_1x4" H 5300 6200 50  0001 C CNN
+F 3 "~" H 5300 6200 50  0001 C CNN
+	1    5300 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6100 5700 6100
+Wire Wire Line
+	5700 6100 5700 5800
+Wire Wire Line
+	5500 6400 5700 6400
+Wire Wire Line
+	5700 6400 5700 6700
+$Comp
+L power:+5V #PWR0114
+U 1 1 60186CBE
+P 5700 5800
+F 0 "#PWR0114" H 5700 5650 50  0001 C CNN
+F 1 "+5V" H 5715 5973 50  0000 C CNN
+F 2 "" H 5700 5800 50  0001 C CNN
+F 3 "" H 5700 5800 50  0001 C CNN
+	1    5700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 60186FAF
+P 5700 6700
+F 0 "#PWR0122" H 5700 6450 50  0001 C CNN
+F 1 "GND" H 5705 6527 50  0000 C CNN
+F 2 "" H 5700 6700 50  0001 C CNN
+F 3 "" H 5700 6700 50  0001 C CNN
+	1    5700 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6300 5800 6300
+Wire Wire Line
+	5800 6300 5800 6350
+Wire Wire Line
+	5800 6350 6000 6350
+Wire Wire Line
+	5500 6200 5800 6200
+Wire Wire Line
+	5800 6200 5800 6150
+Wire Wire Line
+	5800 6150 6000 6150
+Text GLabel 6000 6350 2    50   Input ~ 0
+TXD
+Text GLabel 6000 6150 2    50   Output ~ 0
+RXD
+$EndSCHEMATC
